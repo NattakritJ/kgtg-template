@@ -28,6 +28,17 @@ class OverseaTransportTest {
     }
 
     @Test
+    void someThingShouldBeFly() {
+        OverseaTransport overseaTransport = new OverseaTransport();
+
+        Flyable f = () -> "UFO is flyyyyyyy";
+
+        String go = overseaTransport.go(f);
+
+        assertEquals("UFO is flyyyyyyy", go);
+    }
+
+    @Test
     void shipShouldBeFloat() {
         OverseaTransport overseaTransport = new OverseaTransport();
         Ship ship = new Ship();
