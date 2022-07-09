@@ -2,17 +2,17 @@ package tech.kbtg.demo;
 
 public class FizzBuzz {
 
-    public static String handle(int[] i) {
+    public static String handle(int i) {
         StringBuilder builder = new StringBuilder();
-        for (int ii : i) {
-            if (ii % 3 == 0 && ii % 5 == 0)
+        for (int j = 1; j <= i; j++) {
+            if (j % 3 == 0 && j % 5 == 0)
                 builder.append("FizzBuzz");
-            else if (ii % 3 == 0)
+            else if (j % 3 == 0)
                 builder.append("Fizz");
-            else if (ii % 5 == 0)
+            else if (j % 5 == 0)
                 builder.append("Buzz");
             else
-                builder.append(ii);
+                builder.append(j);
 
             builder.append(" ");
         }
